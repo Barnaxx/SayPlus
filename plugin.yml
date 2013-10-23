@@ -1,0 +1,46 @@
+name: SayPlus
+version: 4.0
+description: With this plugin you can replace the old say by a fully customisable say!
+load: POSTWORLD
+author: Barnaxx
+website: http://dev.bukkit.org/bukkit-plugins/sayplus/
+main: fr.barnaxx.sayplus.Main
+database: false
+commands:
+   say:
+      description: Send a custom say with SayPlus
+      aliases: s
+      permission: sayplus.say
+      permission-message: You don't have permission to do that!
+      usage: /say <message>
+   sayplus:
+      description: Show the actual version, and the commands list
+      aliases: [sp, sayp]
+      permission: sayplus.use
+      permission-message: You don't have permission to do that!
+      usage: /sayplus
+   sayplusreload:
+      description: Reload the configuration
+      aliases: [spr, saypr]
+      permission: sayplus.reload
+      permission-message: You don't have permission to do that!
+      usage: /sayplusreload
+   saypluscolors:
+      description: Show the color codes
+      aliases: [spc, saypc]
+      permission: sayplus.colors
+      permission-message: You don't have permission to do that!
+      usage: /saypluscolors
+permissions:
+  sayplus.say:
+    description: The permission to send a custom say with the /say command
+    default: op
+  sayplus.use:
+    description: The permission to see the plugin informations with the /sayplus command
+    default: op
+  sayplus.reload:
+    description: The permission to reload the config with the /sayplusreload command
+    default: op
+  sayplus.colors:
+    description: The permision to see the color codes with the /saypluscolors command
+    default: op
