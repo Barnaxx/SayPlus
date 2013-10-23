@@ -44,7 +44,7 @@ public void onEnable()
       }
       String msg = "";
       String msgcolor = getConfig().getString("msgcolor");
-      String prefix = getConfig().getString("prefix").replaceAll("{PLAYER}", sender.getName());
+      String prefix = getConfig().getString("prefix").replaceAll("%PLAYER%", sender.getName());
       String configsound = getConfig().getString("sound");
       for (String s : args) {
         msg = msg + s + " ";
